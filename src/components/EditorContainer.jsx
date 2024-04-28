@@ -9,8 +9,8 @@ const EditorContainer = ({ language, title }) => {
         <button>O/C</button>
       </div>
       <Editor
-        className="editor-container"
-        width="35vw"
+        className="code-editor"
+        width= "32vw"
         height="50vh"
         defaultLanguage={language}
         theme="vs-dark"
