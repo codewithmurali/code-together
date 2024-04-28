@@ -10,8 +10,8 @@ const EditorContainer = ({ language, title }) => {
       </div>
       <Editor
         className="editor-container"
-        width="70vw"
-        height="90vh"
+        width="35vw"
+        height="50vh"
         defaultLanguage={language}
         theme="vs-dark"
       />
