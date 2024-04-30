@@ -11,6 +11,7 @@ function App() {
         <EditorContainer title={"CSS"} language={"css"} />
         <EditorContainer title={"JavaScript"} language={"javascript"} />
       </div>
+      <div>iframe</div>
     </>
   );
 }
