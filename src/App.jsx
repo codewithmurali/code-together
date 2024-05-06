@@ -3,6 +3,11 @@ import "./App.css";
 import EditorContainer from "./components/EditorContainer";
 
 function App() {
+const [html, setHtml] = useState("");
+const [css , setCss] = useState("");
+const [js, setJs] = useState(""); 
+
+
   return (
     <>
       <div className="panel top-panel"></div>
@@ -11,9 +16,7 @@ function App() {
         <EditorContainer title={"CSS"} language={"css"} />
         <EditorContainer title={"JavaScript"} language={"javascript"} />
       </div>
-      <div>iframe</div>
-      <div>iframe</div>
-      <div>iframe</div>
+                       
     </>
   );
 }

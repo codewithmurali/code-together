@@ -1,8 +1,9 @@
 import React from "react";
 import Editor from "@monaco-editor/react";
 
-const EditorContainer = ({ language, title }) => {
-  return (
+const EditorContainer = ({ language, title, value, onChange }) => {
+
+   return (
     <div className="editor-container">
       <div className="editor-title">
         <h3>{title}</h3>
