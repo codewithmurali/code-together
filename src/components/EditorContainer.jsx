@@ -7,7 +7,7 @@ const EditorContainer = ({ language, title, value, onChange }) => {
     <div className="editor-container">
       <div className="editor-title">
         <h3>{title}</h3>
-        <button>O/C</button>
+        <button>O&C</button>
       </div>
       <Editor
         className="code-editor"
