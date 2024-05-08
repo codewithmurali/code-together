@@ -2,7 +2,27 @@ import React from "react";
 import Editor from "@monaco-editor/react";
 
 const EditorContainer = ({ language, title, value, onChange }) => {
-
+  const options = {
+    autoIndent: 'full',
+    contextmenu: true,
+    fontFamily: 'monospace',
+    fontSize: 13,
+    lineHeight: 24,
+    hideCursorInOverviewRuler: true,
+    matchBrackets: 'always',
+    minimap: {
+      enabled: true,
+    },
+    scrollbar: {
+      horizontalSliderSize: 4,
+      verticalSliderSize: 18,
+    },
+    selectOnLineNumbers: true,
+    roundedSelection: false,
+    readOnly: false,
+    cursorStyle: 'line',
+    automaticLayout: true,
+  }; 
    return (
     <div className="editor-container">
       <div className="editor-title">
@@ -10,6 +30,7 @@ const EditorContainer = ({ language, title, value, onChange }) => {
         <button>O&C</button>
       </div>
       <Editor
+        options={options}
         className="code-editor"
         width= "32vw"
         height="50vh"
