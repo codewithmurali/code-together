@@ -15,7 +15,7 @@ const EditorContainer = ({ language, title, value, onChange }) => {
     },
     scrollbar: {
       horizontalSliderSize: 4,
-      verticalSliderSize: 18,
+      verticalSliderSize: 16,
     },
     selectOnLineNumbers: true,
     roundedSelection: false,
