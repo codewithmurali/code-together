@@ -10,9 +10,6 @@ const EditorContainer = ({ language, title, value, onChange }) => {
     lineHeight: 24,
     hideCursorInOverviewRuler: true,
     matchBrackets: 'always',
-    minimap: {
-      enabled: true,
-    },
     scrollbar: {
       horizontalSliderSize: 4,
       verticalSliderSize: 16,
