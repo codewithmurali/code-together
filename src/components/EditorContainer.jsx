@@ -11,7 +11,7 @@ const EditorContainer = ({ language, title, value, onChange }) => {
     hideCursorInOverviewRuler: true,
     scrollbar: {
       horizontalSliderSize: 4,
-      verticalSliderSize: 14,
+   
     },
     selectOnLineNumbers: true,
     roundedSelection: false,
