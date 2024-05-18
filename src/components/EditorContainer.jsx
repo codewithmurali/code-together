@@ -10,7 +10,7 @@ const EditorContainer = ({ language, title, value, onChange }) => {
     lineHeight: 24,
     hideCursorInOverviewRuler: true,
     scrollbar: {
-      horizontalSliderSize: 4,
+
    
     },
     selectOnLineNumbers: true,
