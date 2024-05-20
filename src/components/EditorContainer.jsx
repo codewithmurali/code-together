@@ -1,32 +1,23 @@
-import React from "react";
+import React, { useReducer } from "react";
 import Editor from "@monaco-editor/react";
 
 const EditorContainer = ({ language, title, value, onChange }) => {
-  const options = {
-    autoIndent: 'full',
-    contextmenu: true,
-    fontFamily: 'monospace',
-    fontSize: 13,
-    lineHeight: 24,
-    hideCursorInOverviewRuler: true,
-    scrollbar: {
+  const [open,  setOpen ] = useState(true);
 
-   
-    },
-    selectOnLineNumbers: true,
-    roundedSelection: false,
-    readOnly: false,
-    cursorStyle: 'line',
-    automaticLayout: true,
-  }; 
+
+  function handleChange(editor, data, value ){
+    onChange(value)
+  }
+
    return (
     <div className="editor-container">
       <div className="editor-title">
         <h3>{title}</h3>
-        <button>O&C</button>
+        <button onClick = {()=> setOpen((prev)=> !prev)}></button>
       </div>
       <Editor
-        options={options}
+      onChange={handleChange}
+  value={value}
         className="code-editor"
         width= "32vw"
         height="50vh"
