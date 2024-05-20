@@ -2,7 +2,7 @@ import React, { useReducer } from "react";
 import Editor from "@monaco-editor/react";
 
 const EditorContainer = ({ language, title, value, onChange }) => {
-  const [open,  setOpen ] = useState(true);
+
 
 
   function handleChange(editor, data, value ){
