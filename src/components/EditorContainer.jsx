@@ -1,7 +1,7 @@
 import React, { useReducer } from "react";
 import Editor from "@monaco-editor/react";
-import LaunchIcon from '@mui/icons-material/Launch';
-import TransitEnterexitIcon from '@mui/icons-material/TransitEnterexit';
+import {LaunchIcon , TransitEnterexitIcon} from '@mui/icons-material/Launch';
+
 const EditorContainer = ({ language, title, value, onChange }) => {
   const [open,  setOpen ] = useState(true);
 
