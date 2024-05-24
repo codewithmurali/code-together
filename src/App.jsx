@@ -15,8 +15,8 @@ function App() {
       setSrcDoc(`
         <!DOCTYPE html>
         <html>
-          <head>
-           
+          <head> <style>${css}</style>
+          <style>${css}</style>
           </head>
           <body>
             ${html}
