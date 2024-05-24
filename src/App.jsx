@@ -16,7 +16,7 @@ function App() {
         <!DOCTYPE html>
         <html>
           <head>
-            <style>${css}</style>
+           
           </head>
           <body>
             ${html}
