@@ -28,7 +28,7 @@ a:hover {
 }
 
 .nav {
-  padding-top: 0.5rem;
+  padding-block: 0.5rem 0.3rem ;
   padding-inline: 0.8rem;
   display: flex;
   justify-content: space-between;
@@ -48,15 +48,17 @@ h1 {
 
 .layout {
   display: flex;
-  height: calc(100vh - 50px); /* Adjust this value if needed */
+  height: calc(100vh - 50px); 
   width: 100%;
 }
 
 .layout-row {
+
   flex-direction: row;
 }
 
 .layout-column {
+
   flex-direction: column;
 }
 
@@ -83,14 +85,18 @@ button:focus-visible {
 }
 
 .panel {
+
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
   justify-content: space-around;
 }
 
 .layout-row .panel {
-  flex-basis: 34vw;
+  overflow-y: scroll;
+  flex-basis: 36vw;
   flex-shrink: 0;
+  align-items: flex-start;  
 }
 
 .layout-row .display-container {
@@ -98,11 +104,14 @@ button:focus-visible {
 }
 
 .layout-column .panel {
-  flex-basis: 34vw;
+
   flex-shrink: 0;
+  padding-bottom: 1rem;
+  
 }
 
 .layout-column .display-container {
+  
   flex-grow: 1;
 }
 
@@ -110,6 +119,14 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+.editor-title{
+  width: 32vw;
+  margin-block: 4px ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 iframe {
