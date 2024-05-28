@@ -1,10 +1,5 @@
 # Node modules
 node_modules/
-has-property-descriptors/
-has-proto/
-has-symbols/
-hasown/
-http-errors/
 
 # Logs
 logs/
