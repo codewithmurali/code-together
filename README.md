@@ -2,6 +2,12 @@
 
 Code Together is a real-time collaborative code editor for HTML, CSS, and JavaScript, built with React.js and Socket.IO. This application allows multiple users to write and edit code together in real-time, with changes instantly reflected across all connected clients.
 
+
+
+https://github.com/codewithmurali/code-together/assets/80981341/1ab5791e-cf9b-48bc-9c54-91a88a49fda3
+
+
+
 ## Features
 
 - Real-time collaborative coding
